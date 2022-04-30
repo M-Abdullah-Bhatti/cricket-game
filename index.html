@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Head and Tail</title>
+</head>
+
+<body>
+
+    <section id="home">
+        <h1 class="heading">Head and Tail</h1>
+
+        <div class="container">
+            <h2 class="head">Rules And Tips:</h2>
+            <p class="para">> You Can choose your's and opponent team</p>
+            <p class="para">> You have a of autoplay bowling</p>
+            <p class="para">> You have just 2 wickets to chase down the score</p>
+            <p class="para">> Press Submit button after enter any number in your input box</p>
+            <p class="para">> Enter number b/w 1-6 other wise you will be out!</p>
+        </div>
+
+        <div class="con">
+
+            <div class="co">
+                <label>Choose Your Team</label><br>
+                <select class="form-select" id="team" aria-label="Default select example" onchange="team()">
+                    <option selected>Open this select menu</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="England">England</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Newzeland">Newzeland</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </div>
+
+            <div class="co">
+                <label>Choose Opponent Team</label><br>
+                <select class="form-select" id="tea" aria-label="Default select example" onchange="Team()">
+                    <option selected>Open this select menu</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="England">England</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Newzeland">Newzeland</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="play">
+        <h1 class="headi">Play Game Here!</h1>
+        <p class="para">First Autoplay Bowling From Here <span id="arrow">&#8595;</span></p>
+        <button class="btn btn-info" onclick="auto_click()">Autoplay Bowling</button>
+
+        <hr>
+
+        <h3 class="headin">Score Card</h2>
+            <p class="parag">Your Score is <span id="score">0</span></p>
+            <p class="parag"><Span id="Team">You</Span> need <span id="req">0</span> runs with <span id="wick">2</span>
+                wickets remaining</p>
+
+            <hr>
+
+            <div class="conta">
+
+                <h3 id="first">Your Team</h3>
+                <input type="number" id="our_run" placeholder="Enter Number here">
+                <!-- <button type="button" class="btn btn-outline-info">Submit</button> -->
+                <button class="btn-outline-primary" onclick="sub()">Submit</button>
+
+            </div>
+
+            <div class="conta">
+
+                <h3 id="second">Opponent Team</h3>
+                <input type="number" id="opp_run">
+
+            </div>
+
+            <hr>
+
+            <p id="result">Result Will Appear After Match</p>
+            <button class="btn btn-info" onclick="reload()">Try Again</button>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

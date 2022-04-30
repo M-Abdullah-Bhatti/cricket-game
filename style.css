@@ -1,0 +1,155 @@
+ #home {
+    width: 100%; 
+     height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/cricket.png");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* text-align: center; */
+}
+ 
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color: #ffc800;   
+}
+
+.container{
+    text-align: left;
+    /* position: relative; */
+
+}
+
+.head{
+    /* position: absolute; */
+    /* top: 50px; */
+    margin-top: 50px;
+    color: #efdd0a;
+    font-size: 2.5rem;
+    
+}
+
+.para{
+    /* position: absolute; */
+    /* top: 130px; */
+    margin-top: 20px;
+    color: red;
+    font-size: 1.2rem;
+}
+.con{
+    margin-top: 100px;
+}
+
+label{
+    color: #efdd0a;
+    font-size: 1.7rem;
+}
+
+@media(max-width:844px){
+
+    #home{
+        margin: auto;
+        height: auto;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .head{
+        font-size: 1.2rem;
+    }
+    .para{
+    font-size: 15px;
+    }
+}
+
+.con{
+    text-align: center;
+}
+
+.co {
+    display: inline-block;
+    font-size: 25px;
+
+}
+
+.form-select{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 10px;
+    width: 400px;
+}
+
+
+
+@media(max-width:415px){
+    #home{
+        margin: auto;
+    }
+
+    label{
+        font-size: 25px;
+    }
+    .form-select{
+        width: 290px;
+    }
+
+}
+
+#play{
+    margin-top: 3rem;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(231 250 255);
+}
+
+.headi{
+font-size: 3rem;
+}
+
+.btn{
+    margin-top: 2rem; 
+}
+
+.headin{
+
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-decoration: underline;
+}
+
+.parag{
+    color: #2077e3;
+    font-size: 1.5rem;
+}
+
+.conta{
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+#our_run{
+width: 300px;
+}
+#opp_run{
+    width: 300px;
+}
+
+#result{
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #2700ff;
+}
+
+@media(max-width:754px){
+    #result{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    } 
+    
+    #play{
+        height: auto;
+    }
+}
